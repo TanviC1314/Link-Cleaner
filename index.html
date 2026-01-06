@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkClean — URL Cleaner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">LC</div>
+        <div>
+          <h1 class="title">LinkClean</h1>
+          <p class="subtitle">Remove tracking. Share clean links.</p>
+        </div>
+      </div>
+
+      <div class="badge">
+        <span class="badge-label">Focus</span>
+        <span class="badge-value">Functions + DOM</span>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">Paste a link</h2>
+        <div class="pill" id="statusPill">Ready</div>
+      </div>
+
+      <div class="pad">
+        <label class="label" for="urlInput">URL</label>
+        <textarea id="urlInput" class="textarea" rows="3"
+          placeholder="Paste any link here… (e.g., https://example.com/page?utm_source=google&utm_medium=cpc)"></textarea>
+
+        <div class="actions">
+          <button class="btn btn-primary" id="cleanUtmBtn" type="button">Clean UTM</button>
+          <button class="btn" id="removeAllParamsBtn" type="button">Remove ALL Params</button>
+          <button class="btn" id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <div class="options">
+          <label class="toggle">
+            <input type="checkbox" id="keepHashToggle" checked />
+            <span class="toggle-ui"></span>
+            <span class="toggle-text">Keep #hash</span>
+          </label>
+
+          <label class="toggle">
+            <input type="checkbox" id="lowercaseHostToggle" />
+            <span class="toggle-ui"></span>
+            <span class="toggle-text">Lowercase domain</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="pad">
+        <div class="out">
+          <div class="out-head">
+            <div>
+              <div class="out-label">Clean link</div>
+              <div class="out-preview" id="previewText">—</div>
+            </div>
+            <button class="btn btn-ghost" id="copyBtn" type="button">Copy</button>
+          </div>
+
+          <div class="out-box" id="outputText">—</div>
+        </div>
+
+        <div class="history">
+          <div class="history-head">
+            <h3 class="history-title">Recent</h3>
+            <span class="history-sub" id="historyCount">0 items</span>
+          </div>
+          <div class="history-list" id="historyList">
+            <!-- JS renders recent items -->
+          </div>
+        </div>
+
+        <p class="foot">
+          Built for sharing cleaner links — perfect small portfolio tool.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
