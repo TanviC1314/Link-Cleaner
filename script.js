@@ -59,7 +59,13 @@ function isValidUrl(text) {
   // 3. If error → return false
   // 4. Else → return true
   if (text=="") return false
-  
+  try{
+    new URL(text);
+    return true
+  }
+  catch(_){
+    return false
+  }
 }
 
 
