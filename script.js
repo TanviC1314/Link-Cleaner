@@ -90,6 +90,14 @@ function toUrlObject(text) {
   }catch(_){
     return null
   }
+  //else
+
+    
+  //   try{
+  //   return new URL(text);
+  // }catch(_){
+  //   return null
+  // }
 
   console.log(url.hostname)
 }
