@@ -78,7 +78,18 @@ function toUrlObject(text) {
   // 3. If error → return null
   //https://example.com/page?x=1#top
   let url;
-  
+  try{
+    url =new URL(text);
+    const obj={
+      host: url.hostname,
+      path:url.pathname,
+      search:url.search,
+      hash:url.hash
+    }
+    return obj
+  }catch(_){
+    return null
+  }
   //else
 
     
