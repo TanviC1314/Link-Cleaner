@@ -52,7 +52,7 @@ function render() {
 
 // Validate URL string
 function isValidUrl(text) {
-  // 👉 WRITE YOUR CODE HERE
+  // 👉 WRITE YOUR CODE HER
   // Instructions:
   // 1. Return false if text is empty
   // 2. Try creating new URL(text)
