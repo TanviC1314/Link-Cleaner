@@ -52,7 +52,7 @@ function render() {
 
 // Validate URL string
 function isValidUrl(text) {
-  
+
   if (text=="") return false
   try{
     new URL(text);
