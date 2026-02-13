@@ -45,10 +45,7 @@ function render() {
 
 
 
-/**************************************************
- * STEP 4: PURE FUNCTIONS (🔥 CORE TOPIC 🔥)
- * This is where YOU practice functions
- **************************************************/
+
 
 // Validate URL string
 function isValidUrl(text) {
