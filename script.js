@@ -47,7 +47,7 @@ function render() {
 
 
 
-// Validate URL string
+
 function isValidUrl(text) {
  
   if (text=="") return false
