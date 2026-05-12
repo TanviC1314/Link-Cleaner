@@ -63,7 +63,12 @@ function isValidUrl(text) {
 
 // Safely convert string to URL object
 function toUrlObject(text) {
-  
+  // 👉 WRITE YOUR CODE HERE
+  // Instructions:
+  // 1. Try new URL(text)
+  // 2. If success → return URL object
+  // 3. If error → return null
+  //https://example.com/page?x=1#top
   let url;
   try{
     url =new URL(text);
