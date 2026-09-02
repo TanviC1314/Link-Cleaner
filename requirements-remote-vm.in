@@ -1,0 +1,31 @@
+# Direct application requirements for the managed CUDA/PyTorch remote image.
+# Resolve this file with uv for CPython 3.11 / x86_64-manylinux_2_28.
+# The managed torch/CUDA stack is intentionally supplied by the base image.
+# Qwen3.5 requires Transformers >=5.2.0; the application pin is exact below.
+unsloth==2026.3.4
+unsloth_zoo==2026.3.4
+transformers==5.2.0
+accelerate==1.10.1
+bitsandbytes==0.48.1
+lm-format-enforcer==0.10.12
+sentence-transformers==5.2.2
+qdrant-client==1.15.1
+rank-bm25==0.2.2
+pymupdf==1.26.5
+beautifulsoup4==4.14.2
+pandas==2.3.3
+openpyxl==3.1.5
+pyarrow==21.0.0
+tqdm==4.67.1
+scikit-learn==1.7.2
+sacrebleu==2.5.1
+rouge-score==0.1.2
+bert-score==0.3.13
+detoxify==0.5.2
+lingua-language-detector==2.1.1
+scipy==1.16.2
+seaborn==0.13.2
+matplotlib==3.10.7
+nltk==3.9.1
+datasets==4.3.0
+huggingface-hub==1.3.2
